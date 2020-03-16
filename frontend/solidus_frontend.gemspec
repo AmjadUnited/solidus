@@ -18,13 +18,13 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.required_ruby_version = '>= 2.2.2'
+  s.required_ruby_version = '>= 2.4.0'
   s.required_rubygems_version = '>= 1.8.23'
 
   s.add_dependency 'solidus_api', s.version
   s.add_dependency 'solidus_core', s.version
 
-  s.add_dependency 'canonical-rails', '~> 0.1.1'
+  s.add_dependency 'canonical-rails', '~> 0.2.0'
   s.add_dependency 'jquery-rails'
   s.add_dependency 'sass-rails'
   s.add_dependency 'coffee-rails'

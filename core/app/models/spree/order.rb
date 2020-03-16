@@ -69,10 +69,9 @@ module Spree
     has_many :reimbursements, inverse_of: :order
     has_many :adjustments, -> { order(:created_at) }, as: :adjustable, inverse_of: :adjustable, dependent: :destroy
     has_many :line_item_adjustments, through: :line_items, source: :adjustments
-    has_many :shipment_adjustments, through: :shipments, source: :adjustments
     has_many :inventory_units, inverse_of: :order
-    has_many :products, through: :variants
     has_many :variants, through: :line_items
+    has_many :products, through: :variants
     has_many :refunds, through: :payments
     has_many :all_adjustments,
              class_name: 'Spree::Adjustment',
@@ -92,6 +91,7 @@ module Spree
         pluck(:state).uniq
       end
     end
+    has_many :shipment_adjustments, through: :shipments, source: :adjustments
 
     accepts_nested_attributes_for :line_items
     accepts_nested_attributes_for :bill_address
