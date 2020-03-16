@@ -30,13 +30,12 @@ Gem::Specification.new do |s|
   s.add_dependency 'activemerchant', '~> 1.66'
   s.add_dependency 'acts_as_list', '~> 0.3'
   s.add_dependency 'awesome_nested_set', '~> 3.2'
-  s.add_dependency 'cancancan', ['>= 2.2', '< 4.0']
   s.add_dependency 'carmen', '~> 1.1.0'
-  s.add_dependency 'discard', '~> 1.0'
+  s.add_dependency 'cancancan', ['>= 2.2', '< 4.0']
   s.add_dependency 'ffaker', '~> 2.0'
   s.add_dependency 'friendly_id', '~> 5.0'
   s.add_dependency 'highline', '~> 1.7' # Necessary for the install generator
-  s.add_dependency 'kaminari-activerecord', '~> 1.1'
+  s.add_dependency 'kaminari', '~> 0.15', '>= 0.15.1'
   s.add_dependency 'monetize', '~> 1.8'
   s.add_dependency 'paperclip', '>= 4.2'
   s.add_dependency 'paranoia', '~> 2.4'
