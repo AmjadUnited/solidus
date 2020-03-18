@@ -21,6 +21,6 @@ Gem::Specification.new do |gem|
   gem.required_rubygems_version = '>= 1.8.23'
 
   gem.add_dependency 'solidus_core', gem.version
-  gem.add_dependency 'rabl', '0.13.1'
+  gem.add_dependency 'rabl', '~> 0.14.2'
   gem.add_dependency 'versioncake', '~> 4.0'
 end
